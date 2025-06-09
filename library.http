@@ -1,0 +1,33 @@
+# library.http
+# REST client test file for testing Book Catalog API endpoints
+
+### Get all books
+GET http://localhost:3000/books
+
+### Get single book
+GET http://localhost:3000/books/1
+
+### Create book
+POST http://localhost:3000/books
+Content-Type: application/json
+
+{
+  "title": "1984",
+  "author": "George Orwell",
+  "isbn": "978-0451524935",
+  "publication_year": 1949
+}
+
+### Update book
+PUT http://localhost:3000/books/2
+Content-Type: application/json
+
+{
+  "title": "Nineteen Eighty-Four"
+}
+
+### Delete book
+DELETE http://localhost:3000/books/4
+
+### Count books by year
+GET http://localhost:3000/books/count/1949
