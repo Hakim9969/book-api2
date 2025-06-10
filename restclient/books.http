@@ -5,17 +5,17 @@
 GET http://localhost:3000/books
 
 ### Get single book
-GET http://localhost:3000/books/1
+GET http://localhost:3000/books/2
 
 ### Create book
 POST http://localhost:3000/books
 Content-Type: application/json
 
 {
-  "title": "1984",
-  "author": "George Orwell",
-  "isbn": "978-0451524935",
-  "publication_year": 1949
+  "title": "Demon",
+  "author": "Hakim",
+  "isbn": "1345678",
+  "publication_year": 1947
 }
 
 ### Update book
@@ -23,11 +23,11 @@ PUT http://localhost:3000/books/2
 Content-Type: application/json
 
 {
-  "title": "Nineteen Eighty-Four"
+  "title": "Eat"
 }
 
 ### Delete book
 DELETE http://localhost:3000/books/4
 
 ### Count books by year
-GET http://localhost:3000/books/count/1949
+GET http://localhost:3000/books/count/1940
