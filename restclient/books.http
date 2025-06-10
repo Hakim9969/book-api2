@@ -3,11 +3,20 @@ POST http://localhost:3000/books
 Content-Type: application/json
 
 {
-  "title": "Demon",
-  "author": "Brian",
-  "isbn": "1345679",
-  "publication_year": 1950
+  "title": "Slavery",
+  "author": "FRankline",
+  "isbn": "14567890",
+  "publication_year": 1940
 }
+
+### Update book
+PUT http://localhost:3000/books/9
+Content-Type: application/json
+
+{
+  "author": "Frankline"
+}
+
 
 ### Get all books
 GET http://localhost:3000/books
@@ -16,16 +25,8 @@ GET http://localhost:3000/books
 GET http://localhost:3000/books/2
 
 
-### Update book
-PUT http://localhost:3000/books/7
-Content-Type: application/json
-
-{
-  "title": "Slayer"
-}
-
 ### Delete book
 DELETE http://localhost:3000/books/4
 
 ### Count books by year
-GET http://localhost:3000/books/count/1940
+GET http://localhost:3000/books/count/1947
